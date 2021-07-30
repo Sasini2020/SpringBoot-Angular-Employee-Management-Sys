@@ -1,4 +1,4 @@
-# SpringBoot-Employee-Management-Sys
+# SpringBoot-Employee-Management-System
 Spring Boot, Angular CRUD operations are included in this project
 
 
