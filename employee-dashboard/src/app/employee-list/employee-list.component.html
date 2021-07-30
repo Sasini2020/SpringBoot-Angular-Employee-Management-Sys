@@ -1,0 +1,24 @@
+<br><br>
+<table class="table mx-auto shadow p-3 mb-5 bg-white rounded" style="width: 850px;">
+    <thead class="thead" style="background-color:#f1c40f;">
+        <tr>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of employees">
+            <td>{{ employee.firstName }}</td>
+            <td>{{ employee.lastName }}</td>
+            <td>{{ employee.emailId }}</td>
+            <td>                                                                                                                        
+                <button (click) = "updateEmployee(employee.id)" style="border: none; background-color: #fff;"><fa-icon [icon] = faEdit style="color: green;background-color: white;"></fa-icon></button>
+                <button (click) = "deleteEmployee(employee.id)" style="margin-left: 40px; background-color: #fff;border: none;color: red;"><fa-icon [icon] = faTrashAlt></fa-icon></button>
+                <button (click) = "employeeDetails(employee.id)" style="margin-left: 40px; background-color: #fff;border: none;color: #242424;"><fa-icon [icon] = faListUl></fa-icon></button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br><br><br><br><br><br><br><br>
